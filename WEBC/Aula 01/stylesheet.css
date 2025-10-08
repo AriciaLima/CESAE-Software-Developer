@@ -1,0 +1,24 @@
+* {
+  margin: 0.5;
+  padding: 0.5;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+}
+/* ID */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  height: auto;
+}
+/* CLASS é superior */
+.skills {
+}
+
+h1 {
+  font-family: 'BBH Sans Hegarty', sans-serif;
+  font-weight: 400;
+  font-style: bold;
+}

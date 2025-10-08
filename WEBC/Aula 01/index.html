@@ -3,28 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primeira Página</title>
-  </head>
-  <body>
-    <h1>Arícia Farias Lima</h1>
-    <img
-      src="/Aula 01/gato-amarelo.jpg"
-      width="50%"
-      height="auto"
-      alt="Imagem de um gato amarelo"
+    <title>Quem sou eu?</title>
+    <link rel="stylesheet" href="/Aula 01/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
-    <h2>Meus Interesses</h2>
-    <ul>
-      <li>Videogames</li>
-      <li>Filmes</li>
-      <li>Fotografia</li>
-    </ul>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ex, enim
-      accusamus debitis consectetur distinctio rerum maiores qui quae nostrum
-      necessitatibus molestias, quidem odit laboriosam nisi accusantium nam
-      minus similique?
-    </p>
+  </head>
+
+  <body>
+    <div id="eu">
+      <h1>Arícia Farias Lima</h1>
+
+      <img
+        src="/Aula 01/img/gato-amarelo.jpg"
+        width="50%"
+        height="auto"
+        alt="Imagem de um gato amarelo"
+      />
+      <p id="aboutMe">Tenho 31 anos, paraense, curiosa e autodidata.</p>
+
+      <h2>Meus Interesses</h2>
+      <ul>
+        <li>Videogames</li>
+        <li>Filmes</li>
+        <li>Fotografia</li>
+      </ul>
+      <h2>Meus Links</h2>
+      <p><a href="https://github.com/AriciaLima">Meu Github</a></p>
+
+      <div class="skills">
+        <h2>Minhas Habilidades</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Tecnologias</th>
+              <th>Nivel</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediario</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>Avançado</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Avançado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <section>
+      <div id="forms">
+        <h2>Entre em contato comigo</h2>
+        <form>
+          
+            <label for="fname">Nome:</label>
+            <input type="text" name="fname" id="fname" />
+         
+
+         
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+        
+
+          
+            <label for="">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem."
+            ></textarea
+            
+
+            <input type="submit" />
+          
+        </form>
+      </div>
+    </section>
+
+    <h2>Video</h2>
     <iframe
       width="560"
       height="315"
@@ -42,5 +109,6 @@
         >SpiritBorn Leveling Guide</a
       >
     </p>
+    <footer>Todos os direitos reservados.</footer>
   </body>
 </html>
