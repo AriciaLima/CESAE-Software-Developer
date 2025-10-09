@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitæ</title>
 
+    <meta
+      name="description"
+      content="Currículo de Arícia Farias Lima — Comunicação Audiovisual, Design Digital e Desenvolvimento Web."
+    />
+
     <!-- Fonte Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,120 +23,174 @@
 
   <body>
     <header>
-      <h1>Curriculum Vitæ - Arícia Farias Lima</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
-    <main>
-      <!-- Seção Sobre Mim -->
-      <section id="sobre">
-        <div class="foto">
-          <img src="/Aula 01/img/perfil.jpg" width="20%" height="auto" alt="" />
-        <h2>Perfil Profissional</h2></div>
-        
+    <main id="home">
+      <div class="container">
+        <h1>Arícia Farias Lima</h1>
 
-        <div class="descricao">
-          <p>
-            Licenciada em Comunicação Audiovisual e Multimédia, com prática em
-            design digital, UX/UI, desenvolvimento web e multimédia. Criativa,
-            proativa e orientada a soluções, com interesse em ecommerce e
-            experiência do utilizador. Atuei em projetos de design responsivo,
-            criação de interfaces, conteúdos gráficos digitais e desenvolvimento
-            front-end.
-          </p>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre">
+          <div>
+            <img
+              src="/Aula 01/img/perfil.jpg"
+              width="20%"
+              height="auto"
+              alt="Foto de perfil de Arícia Farias Lima"
+            />
+
+            <h2>Perfil Profissional</h2>
+            <p>
+              Licenciada em Comunicação Audiovisual e Multimédia, com prática em
+              design digital, UX/UI, desenvolvimento web e multimédia. Criativa,
+              proativa e orientada a soluções, com interesse em ecommerce e
+              experiência do utilizador. Atuei em projetos de design responsivo,
+              criação de interfaces, conteúdos gráficos digitais e
+              desenvolvimento front-end.
+            </p>
           </div>
+        </section>
 
-          <h2>Meus Interesses</h2>
-          <ul>
-            <li>Videogames</li>
-            <li>Filmes</li>
-            <li>Fotografia</li>
-          </ul>
+        <!-- Seção Interesses e Links -->
+        <section id="interesses">
+          <div>
+            <h2>Meus Interesses</h2>
+            <ul>
+              <li>Videogames</li>
+              <li>Filmes</li>
+              <li>Fotografia</li>
+            </ul>
 
-          <h2>Meus Links</h2>
+            <h2>Meus Links</h2>
+            <a
+              href="https://github.com/AriciaLima"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/Aula 01/img/icons/github.png"
+                class="icons"
+                alt="Ícone do GitHub"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ariciafariaslima/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/Aula 01/img/icons/linkedin.png"
+                class="icons"
+                alt="Ícone do LinkedIn"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades">
+          <h2>Minhas Habilidades</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnologias</th>
+                <th>Nível</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JavaScript</td>
+                <td>Intermediário</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Avançado</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Avançado</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos">
+          <h2>Meus Projetos</h2>
+          <h3>
+            <a
+              href="https://github.com/AriciaLima/vanilla-store"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vanilla Store</a
+            >
+          </h3>
+          <h3>
+            <a
+              href="https://github.com/AriciaLima/interactive-todo-list"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Interactive To-Do List</a
+            >
+          </h3>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+          <h2>Entre em contato comigo</h2>
+          <form action="#" method="post">
+            <label for="fname">Nome:</label>
+            <input type="text" name="fname" id="fname" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem."
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+
+        <!-- Seção Vídeo -->
+        <section id="video">
+          <h2>Vídeo</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/KNTRhuHRzUs"
+            title="Vídeo do YouTube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <!-- Seção Link Externo -->
+        <section id="guia">
           <p>
-            <a href="https://github.com/AriciaLima" target="_blank">
-              Meu Github
+            <a
+              href="https://mobalytics.gg/diablo-4/builds/spiritborn/mr-ronit-spiritborn-leveling?coreTab=paragon-board&equipmentTab=gear-stats&variantTab=2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SpiritBorn Leveling Guide
             </a>
           </p>
-        </div>
-      </section>
-
-      <!-- Seção Habilidades -->
-      <section id="habilidades">
-        <h2>Minhas Habilidades</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Tecnologias</th>
-              <th>Nível</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>JavaScript</td>
-              <td>Intermediário</td>
-            </tr>
-            <tr>
-              <td>HTML</td>
-              <td>Avançado</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Avançado</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Seção Contato -->
-      <section id="contato">
-  <h2>Entre em contato comigo</h2>
-
-  <form action="#" method="post">
-    <label for="fname">Nome:</label>
-    <input type="text" name="fname" id="fname" required />
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required />
-
-    <label for="mensagem">Mensagem:</label>
-    <textarea
-      name="mensagem"
-      id="mensagem"
-      placeholder="Digite sua mensagem."
-      rows="5"
-      required
-    ></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-      <!-- Seção Vídeo -->
-      <section id="video">
-        <h2>Vídeo</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/KNTRhuHRzUs"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-
-      <!-- Seção Link Externo -->
-      <section id="guia">
-        <p>
-          <a
-            href="https://mobalytics.gg/diablo-4/builds/spiritborn/mr-ronit-spiritborn-leveling?coreTab=paragon-board&equipmentTab=gear-stats&variantTab=2"
-            target="_blank"
-          >
-            SpiritBorn Leveling Guide
-          </a>
-        </p>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer>
