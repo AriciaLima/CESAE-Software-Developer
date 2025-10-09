@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quem sou eu?</title>
-    <link rel="stylesheet" href="/Aula 01/stylesheet.css" />
+    <title>Curriculum Vitæ</title>
+
+    <!-- Fonte Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="/Aula 01/stylesheet.css" />
   </head>
 
   <body>
-    <div id="eu">
-      <h1>Arícia Farias Lima</h1>
+    <header>
+      <h1>Curriculum Vitæ - Arícia Farias Lima</h1>
+    </header>
 
-      <img
-        src="/Aula 01/img/gato-amarelo.jpg"
-        width="50%"
-        height="auto"
-        alt="Imagem de um gato amarelo"
-      />
-      <p id="aboutMe">Tenho 31 anos, paraense, curiosa e autodidata.</p>
+    <main>
+      <!-- Seção Sobre Mim -->
+      <section id="sobre">
+        <div class="foto">
+          <img src="/Aula 01/img/perfil.jpg" width="20%" height="auto" alt="" />
+        <h2>Perfil Profissional</h2></div>
+        
 
-      <h2>Meus Interesses</h2>
-      <ul>
-        <li>Videogames</li>
-        <li>Filmes</li>
-        <li>Fotografia</li>
-      </ul>
-      <h2>Meus Links</h2>
-      <p><a href="https://github.com/AriciaLima">Meu Github</a></p>
+        <div class="descricao">
+          <p>
+            Licenciada em Comunicação Audiovisual e Multimédia, com prática em
+            design digital, UX/UI, desenvolvimento web e multimédia. Criativa,
+            proativa e orientada a soluções, com interesse em ecommerce e
+            experiência do utilizador. Atuei em projetos de design responsivo,
+            criação de interfaces, conteúdos gráficos digitais e desenvolvimento
+            front-end.
+          </p>
+          </div>
 
-      <div class="skills">
+          <h2>Meus Interesses</h2>
+          <ul>
+            <li>Videogames</li>
+            <li>Filmes</li>
+            <li>Fotografia</li>
+          </ul>
+
+          <h2>Meus Links</h2>
+          <p>
+            <a href="https://github.com/AriciaLima" target="_blank">
+              Meu Github
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção Habilidades -->
+      <section id="habilidades">
         <h2>Minhas Habilidades</h2>
-        <table border="1">
+        <table>
           <thead>
             <tr>
               <th>Tecnologias</th>
-              <th>Nivel</th>
+              <th>Nível</th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
               <td>JavaScript</td>
-              <td>Intermediario</td>
+              <td>Intermediário</td>
             </tr>
             <tr>
               <td>HTML</td>
@@ -59,56 +81,61 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </div>
+      </section>
 
-    <section>
-      <div id="forms">
-        <h2>Entre em contato comigo</h2>
-        <form>
-          
-            <label for="fname">Nome:</label>
-            <input type="text" name="fname" id="fname" />
-         
+      <!-- Seção Contato -->
+      <section id="contato">
+  <h2>Entre em contato comigo</h2>
 
-         
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" />
-        
+  <form action="#" method="post">
+    <label for="fname">Nome:</label>
+    <input type="text" name="fname" id="fname" required />
 
-          
-            <label for="">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              placeholder="Digite sua mensagem."
-            ></textarea
-            
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
 
-            <input type="submit" />
-          
-        </form>
-      </div>
-    </section>
+    <label for="mensagem">Mensagem:</label>
+    <textarea
+      name="mensagem"
+      id="mensagem"
+      placeholder="Digite sua mensagem."
+      rows="5"
+      required
+    ></textarea>
 
-    <h2>Video</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/KNTRhuHRzUs"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    >
-    </iframe>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
-    <p>
-      <a
-        href="https://mobalytics.gg/diablo-4/builds/spiritborn/mr-ronit-spiritborn-leveling?coreTab=paragon-board&equipmentTab=gear-stats&variantTab=2"
-        >SpiritBorn Leveling Guide</a
-      >
-    </p>
-    <footer>Todos os direitos reservados.</footer>
+      <!-- Seção Vídeo -->
+      <section id="video">
+        <h2>Vídeo</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KNTRhuHRzUs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Seção Link Externo -->
+      <section id="guia">
+        <p>
+          <a
+            href="https://mobalytics.gg/diablo-4/builds/spiritborn/mr-ronit-spiritborn-leveling?coreTab=paragon-board&equipmentTab=gear-stats&variantTab=2"
+            target="_blank"
+          >
+            SpiritBorn Leveling Guide
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos os direitos reservados © 2025</p>
+    </footer>
   </body>
 </html>
