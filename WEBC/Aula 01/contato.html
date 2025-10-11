@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Arícia Farias Lima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Aula 01/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list" role="list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#interesses">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html" aria-current="page"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Fale comigo</h1>
+        <section>
+          <h2>Entre em contato</h2>
+          <p>
+            Preencha o formulário abaixo e retornarei o mais breve possível.
+          </p>
+          <form action="#" method="post">
+            <label for="fname">Nome:</label>
+            <input type="text" name="fname" id="fname" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem."
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Todos os direitos reservados © 2025</p>
+    </footer>
+  </body>
+</html>

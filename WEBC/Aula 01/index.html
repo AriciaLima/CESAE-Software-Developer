@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitæ</title>
 
-    <meta
-      name="description"
-      content="Currículo de Arícia Farias Lima — Comunicação Audiovisual, Design Digital e Desenvolvimento Web."
-    />
-
     <!-- Fonte Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,16 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="/Aula 01/stylesheet.css" />
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="/Aula 01/style.css" />
   </head>
 
   <body>
+    <!-- Cabeçalho e navegação principal -->
     <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interesses">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -34,29 +39,28 @@
       <div class="container">
         <h1>Arícia Farias Lima</h1>
 
-        <!-- Seção Sobre Mim -->
+        <!-- Sobre / Perfil profissional -->
         <section id="sobre">
-          <div>
+          <div class="profile-photo">
             <img
               src="/Aula 01/img/perfil.jpg"
-              width="20%"
-              height="auto"
               alt="Foto de perfil de Arícia Farias Lima"
             />
-
+          </div>
+          <div class="profile-text">
             <h2>Perfil Profissional</h2>
             <p>
-              Licenciada em Comunicação Audiovisual e Multimédia, com prática em
-              design digital, UX/UI, desenvolvimento web e multimédia. Criativa,
-              proativa e orientada a soluções, com interesse em ecommerce e
-              experiência do utilizador. Atuei em projetos de design responsivo,
-              criação de interfaces, conteúdos gráficos digitais e
-              desenvolvimento front-end.
+              Licenciada em Comunicação Audiovisual e Multimédia, onde
+              desenvolvi competências em UX/UI, desenvolvimento web e
+              multimédia. Criativa, proativa e orientada a soluções, com
+              interesse em e-commerce e produtos digitais. Participei em
+              projetos de design responsivo, criação de interfaces, conteúdos
+              gráficos e desenvolvimento front-end.
             </p>
           </div>
         </section>
 
-        <!-- Seção Interesses e Links -->
+        <!-- Interesses e links externos -->
         <section id="interesses">
           <div>
             <h2>Meus Interesses</h2>
@@ -93,34 +97,139 @@
           </div>
         </section>
 
-        <!-- Seção Habilidades -->
+        <!-- Habilidades em tabelas -->
         <section id="habilidades">
           <h2>Minhas Habilidades</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Tecnologias</th>
-                <th>Nível</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>JavaScript</td>
-                <td>Intermediário</td>
-              </tr>
-              <tr>
-                <td>HTML</td>
-                <td>Avançado</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>Avançado</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="skill-table">
+            <h3>Desenvolvimento &amp; Dados</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Competência</th>
+                  <th>Nível</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CSS3</td>
+                  <td>Avançado</td>
+                </tr>
+                <tr>
+                  <td>HTML5</td>
+                  <td>Avançado</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>Intermediário</td>
+                </tr>
+                <tr>
+                  <td>Linguagem C</td>
+                  <td>Intermediário</td>
+                </tr>
+                <tr>
+                  <td>SQL</td>
+                  <td>Básico</td>
+                </tr>
+                <tr>
+                  <td>WordPress</td>
+                  <td>Básico</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="skill-table">
+            <h3>Design &amp; Multimédia</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Ferramenta / Prática</th>
+                  <th>Aplicação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Design Responsivo</td>
+                  <td>Produtos web e mobile</td>
+                </tr>
+                <tr>
+                  <td>Figma</td>
+                  <td>UI Kits e protótipos interativos</td>
+                </tr>
+                <tr>
+                  <td>Photoshop</td>
+                  <td>Edição de imagens</td>
+                </tr>
+                <tr>
+                  <td>Prototipagem &amp; Wireframes</td>
+                  <td>Fluxos e jornadas de utilizador</td>
+                </tr>
+                <tr>
+                  <td>Premiere &amp; After Effects</td>
+                  <td>Edição de vídeo e efeitos especiais</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="skill-table">
+            <h3>Ferramentas &amp; Workflow</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Ferramenta</th>
+                  <th>Aplicação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Docker Compose</td>
+                  <td>Orquestração de serviços pessoais</td>
+                </tr>
+                <tr>
+                  <td>Git &amp; GitHub</td>
+                  <td>Versionamento e colaboração</td>
+                </tr>
+                <tr>
+                  <td>Linux &amp; Windows</td>
+                  <td>Configuração e manutenção de ambientes</td>
+                </tr>
+                <tr>
+                  <td>Premiere &amp; After Effects</td>
+                  <td>Edição de vídeo e motion design</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="skill-table">
+            <h3>Soft Skills</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Competência</th>
+                  <th>Aplicação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Autodidata</td>
+                  <td>Aprendizagem contínua e entregas iterativas</td>
+                </tr>
+                <tr>
+                  <td>Comunicação eficaz</td>
+                  <td>Workshops, alinhamentos e suporte a utilizadores</td>
+                </tr>
+                <tr>
+                  <td>Trabalho colaborativo</td>
+                  <td>Equipes multidisciplinares</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
-        <!-- Seção Projetos -->
+        <!-- Projetos destacados -->
         <section id="projetos">
           <h2>Meus Projetos</h2>
           <h3>
@@ -131,6 +240,11 @@
               >Vanilla Store</a
             >
           </h3>
+          <p class="project-desc">
+            Loja virtual simples construída com HTML, CSS e JavaScript. Projeto
+            educativo para praticar fundamentos de front-end e simular uma
+            aplicação de e-commerce.
+          </p>
           <h3>
             <a
               href="https://github.com/AriciaLima/interactive-todo-list"
@@ -139,38 +253,20 @@
               >Interactive To-Do List</a
             >
           </h3>
+          <p class="project-desc">
+            Lista de tarefas interativa construída com HTML, CSS e JavaScript.
+            Permite adicionar, editar e remover tarefas para praticar lógica de
+            front-end.
+          </p>
         </section>
 
-        <!-- Seção Contato -->
-        <section id="contato">
-          <h2>Entre em contato comigo</h2>
-          <form action="#" method="post">
-            <label for="fname">Nome:</label>
-            <input type="text" name="fname" id="fname" required />
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required />
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              placeholder="Digite sua mensagem."
-              rows="5"
-              required
-            ></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-
-        <!-- Seção Vídeo -->
+        <!-- Conteúdo em vídeo -->
         <section id="video">
-          <h2>Vídeo</h2>
+          <h2>Alter do Chão</h2>
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/KNTRhuHRzUs"
+            src="https://www.youtube.com/embed/hXv6MUSyqb8"
             title="Vídeo do YouTube"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -178,15 +274,15 @@
           ></iframe>
         </section>
 
-        <!-- Seção Link Externo -->
+        <!-- Link de referência externa -->
         <section id="guia">
           <p>
             <a
-              href="https://mobalytics.gg/diablo-4/builds/spiritborn/mr-ronit-spiritborn-leveling?coreTab=paragon-board&equipmentTab=gear-stats&variantTab=2"
+              href="https://www.gazetasp.com.br/gazeta-mais/dicas-da-gazeta/praia-secreta-do-brasil-fica-no-coracao-da-amazonia-e-e-considerada-a/1163682"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SpiritBorn Leveling Guide
+              Praia secreta na Amazônia é eleita a mais bonita do Brasil
             </a>
           </p>
         </section>

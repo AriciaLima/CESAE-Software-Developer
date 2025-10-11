@@ -1,0 +1,266 @@
+/* Base global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Paleta principal */
+:root {
+  --color-base: #ffebcd;
+  --color-surface: #fff4e1;
+  --color-text: #3a2a1a;
+  --color-primary: #b86b4b;
+  --color-primary-dark: #8c4d31;
+  --color-accent: #d97d33;
+  --color-border: #d5b99a;
+}
+
+/* Layout geral da página */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-base);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 2em;
+}
+
+/* Cartão central */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+  background: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(58, 42, 26, 0.1);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  margin: 1.2em 0 0.6em;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1.25rem;
+}
+
+/* Listas */
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style-position: inside;
+}
+
+/* Links comuns */
+a:not(.nav-link) {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* Imagens genéricas */
+img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--color-border);
+}
+
+/* Navegação e rodapé */
+.site-nav,
+footer {
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+/* Barra de navegação */
+.site-nav {
+  padding: 12px 0;
+}
+
+/* Lista de itens do menu */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Links do menu */
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+/* Interações do menu */
+.nav-link:hover,
+.nav-link:focus {
+  background: var(--color-primary-dark);
+}
+
+/* Seção Sobre */
+#sobre {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+/* Texto do perfil */
+#sobre p {
+  max-width: 600px;
+}
+
+/* Foto de perfil */
+.profile-photo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Texto ao lado da foto */
+.profile-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+
+/* Blocos de habilidades */
+.skill-table {
+  margin-bottom: 2em;
+}
+
+/* Cabeçalho da categoria */
+.skill-table h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5em;
+}
+
+/* Tabelas de habilidades */
+.skill-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff7e9;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(58, 42, 26, 0.08);
+}
+
+/* Células da tabela */
+.skill-table th,
+.skill-table td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+/* Remove borda da última linha */
+.skill-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Cabeçalhos da tabela */
+.skill-table th {
+  background: rgba(184, 107, 75, 0.15);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Formulário de contato */
+form {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Campos do formulário */
+form :where(input, textarea, button) {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* Botão do formulário */
+form button {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* Interação do botão */
+form button:hover,
+form button:focus {
+  background: var(--color-primary-dark);
+}
+
+/* Ícones externos */
+.icons {
+  width: 40px;
+  margin: 5px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Descrição dos projetos */
+.project-desc {
+  margin-bottom: 1.5em;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1em;
+  flex-shrink: 0;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
